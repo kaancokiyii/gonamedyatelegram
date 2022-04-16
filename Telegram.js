@@ -10,7 +10,7 @@ bot.on('message', async (msg) =>{
     const message = msg.text.trim().toLowerCase();
     switch(message){
         case "/start":
-            bot.sendMessage(chatId,"")
+            bot.sendMessage(chatId,"Selamlar")
             break;
         case "/haber":
             const result = await(getNews(1));
@@ -26,6 +26,7 @@ bot.on('message', async (msg) =>{
             }
             break;
         case "selam" :
+            bot.sendMessage(chatId,"Seni Çok Seviyorum Zübeydem");
             bot.sendPhoto(chatId,"https://pbs.twimg.com/media/E2k2zjNXEAY5D7g?format=jpg&name=small");
             break;
         case "/enguzelkız" :
