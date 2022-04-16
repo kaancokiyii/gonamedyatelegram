@@ -27,7 +27,9 @@ bot.on('message', async (msg) =>{
             break;
         case "selam" :
             bot.sendMessage(chatId,"Seni Çok Seviyorum Zübeydem");
-            bot.sendPhoto(chatId,"https://pbs.twimg.com/media/E2k2zjNXEAY5D7g?format=jpg&name=small");
+            break;
+        case "site":
+            bot.sendMessage(chatId,"https://gonamedya.com");
             break;
         case "/enguzelkız" :
             bot.sendChatAction(chatId,"typing");
